@@ -1,0 +1,41 @@
+{
+  "name": "refvisual",
+  "version": "1.0.0",
+  "description": "Refactoring Visualization",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Jacob Weikert, Gavin Austin",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@types/express-fileupload": "^1.1.3",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "graphviz": "0.0.9",
+    "immutability-helper": "^3.0.1",
+    "npm": "^6.14.4",
+    "react": "^16.13.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.13.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "read-excel-file": "^4.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^5.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^2.0.2",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

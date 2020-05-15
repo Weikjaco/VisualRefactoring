@@ -1,0 +1,30 @@
+{
+    "file-1": {
+        "data": [{
+            "name": "Package - Animal.py 0",
+            "umlImgBefore": "images/Animal.py_uml.png",
+            "umlImgAfter": "images/simple_inheritance.py_classDiagram.png",
+            "children": [{
+                "name": "Animal",
+                "codeBefore": "class Animal:\n    num_of_burgers = 0\n    def __init__(self):\n        self.breath_o2 = True\n        self.move = True\n        self.consume_organic_material = True\n    \n    def grow_from_cells(self):\n        # Grow here\n        pass\n",
+                "codeAfter": "class Animal:\n    num_of_burgers = 0\n    def __init__(self):\n        self.breath_o2 = True\n        self.move = True\n        self.consume_organic_material = True\n    \n    def grow_from_cells(self):\n        # Grow here\n        pass\n"
+            }, {
+                "name": "Burger",
+                "codeBefore": "class Burger:\n    def __init__(self, type_of_burger):\n        self.type = type_of_burger\n",
+                "codeAfter": "class Burger:\n    def __init__(self, type_of_burger):\n        self.type = type_of_burger\n"
+            }]
+        }]
+    },
+    "file-2": {
+        "data": [{
+            "name": "Package - Bear.py 1",
+            "umlImgBefore": "images/Bear.py_uml.png",
+            "umlImgAfter": "images/simple_inheritance.py_classDiagram.png",
+            "children": [{
+                "name": "Bear",
+                "codeBefore": "class Bear(Animal):\n    def __init__(self, type_of):\n        Animal.__init__(self)\n        self.type = type_of\n    \n    def roar(self):\n        print(\"Bear is roaring\")\n    \n    def eats(self):\n        fish_one = Fish(\"trout\")\n        print(\"Im eating a \" + str(fish_one.type))\n        \n",
+                "codeAfter": "class Bear(Animal):\n    def __init__(self, type_of):\n        Animal.__init__(self)\n        self.type = type_of\n    \n    def roar(self):\n        print(\"Bear is roaring\")\n    \n    def eats(self):\n        fish_one = Fish(\"trout\")\n        print(\"Im eating a \" + str(fish_one.type))\n        \n"
+            }]
+        }]
+    }
+}
